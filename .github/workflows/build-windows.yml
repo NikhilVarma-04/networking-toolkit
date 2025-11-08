@@ -1,7 +1,7 @@
 name: Build Windows EXE
+
 on:
   push:
-    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -17,8 +17,8 @@ jobs:
           pip install -r requirements.txt
       - shell: bash
         run: |
-          pyinstaller --windowed --onefile --name "Networking Toolkit" networking_toolkit.py
+          pyinstaller --windowed --onefile --name "Networking-Toolkit" networking_toolkit.py
       - uses: actions/upload-artifact@v4
         with:
           name: Networking-Toolkit-Windows
-          path: dist/Networking\ Toolkit.exe
+          path: dist/Networking-Toolkit.exe

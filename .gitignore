@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Python/venv
+.venv/
+__pycache__/
+
+# PyInstaller outputs
+build/
+dist/
+*.spec
+
+# DMG staging
+dmg_src/
+Networking_Toolkit.dmg
+
+# Big local assets you don't want online
+*.mov
+*.pdf
